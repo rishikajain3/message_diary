@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto+Slab:wght@300&family=Sen&display=swap"
+            rel="stylesheet" />
+        <title><%= title %></title>
+    </head>
+    <body>
+        <h1><%=title%></h1>
+        <p>Share your thoughts with your friends</p>
+            <form method ="POST" action ="/new">
+                <label id="author-name" for="author">Name:</label><br>
+                <input id="name-box" placeholder= "Eg: Rishika" type ="text" name="author"><br>
+                <label id="message" for ="msg">Message:</label><br>
+                <textarea rows="8" cols="60" name="msg" placeholder="Eg: -BE SCARED AND DO IT ANYWAY, -DON’T STOP UNTIL YOU’RE PROUD"></textarea><br>
+                <input id="submit-btn" type="submit" value="Submit">
+            </form>
+    </body>
+</html>

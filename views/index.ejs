@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto+Slab:wght@300&family=Sen&display=swap"
+        rel="stylesheet" />
+</head>
+<body>
+    <h1><%= title %></h1>
+    <p>Welcome to your Daybook :)</p></p>
+    <a href="/new">Send new message</a>
+    <% messages.forEach( message => { %>
+        <div class = "messagebox">
+            <div class = "username">
+                <%= message.user %>
+            </div>
+            <div class="timestamp">
+                <%= message.time %>
+            </div>
+            <div class="messagebox-message">
+                <%= message.message %>
+            </div>
+        </div>
+   <% }) %>
+</body>
+</html>
